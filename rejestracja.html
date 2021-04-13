@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pl">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+
+    <title>Rejestracja</title>
+</head>
+<body>
+
+<header>
+    <nav class="navbar bg-menuNav navbar-dark navbar-expand-md">
+        <a class="navbar-brand" href="index.html">Pływanie</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"><span
+                class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="nav navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item "><a class="nav-link" href="autor.html">Autor</a></li>
+                <li class="nav-item "><a class="nav-link" href="cytaty.html">Cytaty</a></li>
+                <li class="nav-item "><a class="nav-link" href="galeria.html">Galeria</a></li>
+                <li class="nav-item "><a class="nav-link" href="legendy.html">Legendy pływania</a></li>
+                <li class="nav-item "><a class="nav-link" href="zdrowie.html">Zdrowie</a></li>
+                <li class="nav-item "><a class="nav-link" href="ankieta.html">Ankieta</a></li>
+                <li class="nav-item "><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+            </ul>
+
+            <form class="form-inline ml-auto">
+                <input class="form-control" type="search" placeholder="Wyszukaj">
+                <button type="submit" class="btn btn-light ml-2">Znajdź</button>
+            </form>
+
+            <div class="dropdown px-3 py-2">
+                <button class="btn btn-outline-light dropdown-toggle"
+                        type="button" data-toggle="dropdown">Logowanie
+                </button>
+                <form class="dropdown-menu px-3 py-2 dropdown-menu-left dropdown-menu-md-right" id="logowanie">
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Hasło:</label>
+                        <input type="password" class="form-control" id="haslo" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-light">Zaloguj się</button>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="rejestracja.html">Załóż konto</a>
+                    <a class="dropdown-item" href="rejestracja.html">Przypomnij hasło</a>
+                </form>
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+
+<div class="container-fluid" id="tytul">
+    <header>
+        <h1>Formularze</h1>
+    </header>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <form>
+                <h1>Rejestracja</h1>
+                <div class="row mt-2">
+                    <div class="form-group col-sm-5 offset-1">
+                        <label class="sr-only">Login</label>
+                        <input type="text" class="form-control" placeholder="Login" required>
+                    </div>
+                    <div class="form-group col-sm-5">
+                        <label class="sr-only">Hasło</label>
+                        <input type="password" class="form-control" placeholder="Hasło" required>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-sm-10 offset-1">
+                        <label class="sr-only">E-mail</label>
+                        <input type="email" class="form-control" placeholder="Adres email" required>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="form-group col-sm-5 offset-1">
+                        <label class="sr-only">Imie</label>
+                        <input type="text" class="form-control" placeholder="Imie">
+                    </div>
+                    <div class="form-group col-sm-5">
+                        <label class="sr-only">Nazwisko</label>
+                        <input type="text" class="form-control" placeholder="Nazwisko">
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="from-group col-sm-5 offset-1">
+                        <label>Data urodzenia:</label>
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="from-group col-sm-5">
+                        <label>Telefon:</label>
+                        <input type="tel" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="XXX-XXX-XXX">
+                    </div>
+                </div>
+
+                <div class="form-row mt-2">
+                    <div class="form-group col-sm-5 offset-1">
+                        <label>Kraj zamieszkania</label>
+                        <select class="form-control">
+                            <option>Polska</option>
+                            <option>Wielka Brytania</option>
+                            <option>Hiszpania</option>
+                            <option>Inne</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-5">
+                        <label>Województwo:</label>
+                        <select class="custom-select">
+                            <option value="1">podkarpackie</option>
+                            <option value="2">podlaskie</option>
+                            <option selected value="3">lubelskie</option>
+                            <option value="4">małopolskie</option>
+                            <option value="5">śląskie</option>
+                            <option value="6">kujawsko-pomorskie</option>
+                            <option value="7">opolskie</option>
+                            <option value="8">mazowieckie</option>
+                            <option value="9">zachodniopomorskie</option>
+                            <option value="10">łódzkie</option>
+                            <option value="11">warmińsko-mazurskie</option>
+                            <option value="12">wielkopolskie</option>
+                            <option value="13">świętokrzyskie</option>
+                            <option value="14">dolnośląskie</option>
+                            <option value="15">pomorskie</option>
+                            <option value="16">lubliskie</option>
+                            <option value="17">nie dotyczy</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mt-2 offset-sm-1">
+                    <div class="form-check-inline offste-2">
+                        <input class="form-check-input" type="radio" name="gender" id="radioGenderK" value="K">
+                        <label class="form-check-label" for="radioGenderK">Kobieta</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="radioGenderM" value="M">
+                        <label class="form-check-label" for="radioGenderM">Mężczyzna</label>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="form-group form-check offset-1">
+                        <input type="checkbox" class="form-check-input" required>
+                        <label class="form-check-label">Potwierdzam zapoznanie z regulaminem</label>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="custom-control custom-switch offset-1">
+                        <input type="checkbox" class="custom-control-input" id="newsletter">
+                        <label class="custom-control-label" for="newsletter">Zapisz do newslettera</label>
+                    </div>
+                </div>
+
+                <div class="row mt-2 py-2">
+                    <div class="offset-1">
+                        <button type="submit" class="btn btn-primary">Zarejestruj</button>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+
+        <div class="col-sm-6">
+            <form>
+                <h1>Przypomnij hasło</h1>
+                <div class="row mt-2">
+                    <div class="col-sm-10">
+                        <label class="sr-only">E-mail</label>
+                        <input type="email" class="form-control" placeholder="Adres email" required>
+                    </div>
+                </div>
+                <div class="row mt-2 py-2">
+                    <div class="offset-sm-1">
+                        <button type="submit" class="btn btn-primary">Przypomnij hasło</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
