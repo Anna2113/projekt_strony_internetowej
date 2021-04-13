@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+
+    <title>Pływanie</title>
+</head>
+<body>
+<header>
+    <nav class="navbar bg-menuNav navbar-dark navbar-expand-md">
+        <a class="navbar-brand" href="index.html">Pływanie</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"><span
+                class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="nav navbar-nav">
+                <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item "><a class="nav-link" href="autor.html">Autor</a></li>
+                <li class="nav-item "><a class="nav-link" href="cytaty.html">Cytaty</a></li>
+                <li class="nav-item "><a class="nav-link" href="galeria.html">Galeria</a></li>
+                <li class="nav-item active"><a class="nav-link" href="legendy.html">Legendy pływania</a></li>
+                <li class="nav-item "><a class="nav-link" href="zdrowie.html">Zdrowie</a></li>
+                <li class="nav-item "><a class="nav-link" href="ankieta.html">Ankieta</a></li>
+                <li class="nav-item "><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+            </ul>
+
+            <form class="form-inline ml-auto">
+                <input class="form-control" type="search" placeholder="Wyszukaj">
+                <button type="submit" class="btn btn-light ml-2">Znajdź</button>
+            </form>
+
+            <div class="dropdown px-3 py-2">
+                <button class="btn btn-outline-light dropdown-toggle"
+                        type="button" data-toggle="dropdown">Logowanie
+                </button>
+                <form class="dropdown-menu px-3 py-2 dropdown-menu-left dropdown-menu-md-right" id="logowanie">
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Hasło:</label>
+                        <input type="password" class="form-control" id="haslo" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-light">Zaloguj się</button>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="rejestracja.html">Załóż konto</a>
+                    <a class="dropdown-item" href="rejestracja.html">Przypomnij hasło</a>
+                </form>
+            </div>
+
+
+        </div>
+
+    </nav>
+</header>
+<div class="container-fluid" id="tytul">
+    <header>
+        <h1>Legendy Światowego Pływania</h1>
+    </header>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 mt-2">
+            <ul class="nav nav-tabs" id="legendyTabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#Michael" data-toggle="tab">Michael Phelps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#Federica" data-toggle="tab">Federica Pellegrini</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#Paweł" data-toggle="tab">Paweł Korzeniowski</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#Otylia" data-toggle="tab">Otylia Jędrzejczak</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#Adam" data-toggle="tab">Adam Peaty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#Katinka" data-toggle="tab">Katinka Hossu</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="legendyContent">
+                <div class="tab-pane fade show active" id="Michael">
+                    <h2>Michael Phelps</h2>
+                    <figure class="photo"><!--użycie elemntu "figure"-->
+                        <img src="Image/Phelps.jpg" alt="Michael Phelps" width=400 height=300 /><!--wykorzystanie elementu "img" i atrybutu "src"-->
+                    </figure>
+                    <p> Mamy na świeci wielu wielkich sportowców, jednak ograniczamy się tutaj jedynie do pływackich legend. Można byłoby zaczynać od lat bardzo nam odległych,
+                        jednak po dłuższych przemyśleniach zajrzyjmy do czasów raczej nam współczesnych.
+                        Tego człowieka zna każdy albo raczej każdy powinien go znać. Mowa tutaj o Michaelu Phelspie - amerykańskim pływaku specjalizującym się w stylu motylkowym,
+                        zdobywcy 28 medali olimpijskich, w tym 23 złotych; 26-krotnym medaliście Mistrzostw Świata.
+                        Ten niezwykle utalentowany i pracowity człowiek jest najbardziej utytułowanym olimpijczykiem w historii Nowożytnych Igrzysk
+                        Olimpijskich. Rozpoczoł pływanie w wieku 7 lat pod okiem Boba Bowmana, z którym trenuje do dziś. W 2000 roku zadebiutował na Igrzyskach Olimpijskich jako najmłodszy
+                        w olimpijskiej ekipie amerykańskiej.
+                        Poniżej znajdziecie bardzo wartościowy materiał, z którego być może skorzystacie podczas swoich treningów. </p>
+                    <a href="https://www.youtube.com/watch?v=f9YpZbuMnsI" target="_blank"> Zobacz więcej</a>
+                </div>
+                <div class="tab-pane fade " id="Federica">
+                    <h2>Federica Pellegrini</h2>
+                    <figure class="photo">
+                        <img src="Image/Pellegrini.jpg" width=200 height= 300 alt="Federica Pellegrini"/> <!--"width", "height" - szerokość i wysokość obrazka-->
+                    </figure>
+                    <p>Federica Pellegrini - włoska pływaczka specjalizująca się w stylu dowolnym. Zarówno złota jak i srebrna medalistka Igrzysk Olimpijskich oraz wielokrotna rekordzistka świata
+                        i Europy na długim i krótkim basenie. Jej koronny dystanst to 200 metrów stylem dowolnym. W 2009 roku została wybrana najlepszą pływaczką na Świecie. W latach 2009-2011
+                        najlepszą pływaczką w Europie.
+                        Poniżej filmik, na którym Federica Pellegrini pokonuje w niesamowitym stylu płynącą (na sąsiednim torze) na ostatnie zmianie sztafety 4x200m stylem dowolnym
+                        Stine Gardell (reprezentantka Szwecji) dzięki czemu Włoszki sięgają po złoto Mistrzostw Świata, Szwedki - srebro, Węgierki - brąz.</p>
+                    <a href="https://www.youtube.com/watch?v=jhsujOWmkLk" target="_blank"> Zobacz więcej</a >
+                </div>
+                <div class="tab-pane fade " id="Paweł">
+                    <h2>Paweł Korzeniowski</h2>
+                    <figure class="photo">
+                        <img src="Image/Korzeniowski.jpg" width=300 height=300 alt="Paweł Korzeniowski"/><!--wykorzystanie atrybutu "alt"-->
+                    </figure>
+                    <p>
+                        Paweł Korzeniowski - polski pływak, specjalizujący się w stylu motylkowym. Wielokrotny mistrz Polski, mistrz i dwukrotny wicemistrz świata, wielokrotny mistrz Europy
+                        oraz olimpijczyk z Aten, Pekinu, Londynu i Rio de Janeiro. Wielokrotny medalista Uniwersjady z Izmiru, Belgradu, Shenzhen oraz Kazania.
+                        Poniżej filmik, na którym Paweł Korzeniowski zdobywa srebrny medal Mistrzost Świata na 200 metrów stylem motylkowym (na długim basenie) w 2013 roku w Barcelonie.
+                        Ulegając tylko znakomitemu Chadowi le Closowi.</p>
+                    <a href="https://www.youtube.com/watch?v=smrgd7lN8bs" target="_blank">Zobacz więcej</a>
+                </div>
+                <div class="tab-pane fade " id="Otylia">
+                    <h2>Otylia Jędrzejczak</h2>
+                    <figure class="photo">
+                        <img src="Image/Jędrzejczak.jpg" width=300 height=300 alt="Otylia Jędrzejczak"/>
+                    </figure>
+                    <p>
+                        Otylia Jędrzejczak - polska pływaczka, specjalizująca się w stylu motylkowym i dowolnym. Mistrzyni olimpijska z Aten (2004 rok) na 200 metrów stylem motylkowym,
+                        dwukrotna wicemistrzyni olimpijska również z Aten na 100 metrów stylem dowolnym i 400 metrów stylem dowolnym. Wielokrotna mistrzyni świata, Europy oraz Polski.
+                        Rekordzistka świata na 200 metrów stylem moylkowym. Trzykrotna, złota medalistka Uniwersjady w Izmirze.<br/>
+                        Poniżej materiał, na którym Otylia Jędrzejczak wygrywa złoty medal na Igrzyskach Olimpijskich.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=y_vD-y8dnPE" target="_blank">Zobacz więcej</a>
+                </div>
+                <div class="tab-pane fade " id="Adam">
+                    <h2>Adam Peaty</h2>
+                    <figure class="photo">
+                        <img src="Image/Peaty.jpg"  width=300 height=200 alt="Adam Peaty" />
+                    </figure>
+                    <p>
+                        Adam Peaty - brytyjski pływak, specjalizujący się w stylu klasycznym. Mistrz olimpijski z Rio de Janeioro na 100 metrów stylem klasycznym oraz wicemistrz olimpijski
+                        także z tego samego roku na 4x100 metrów stylem zmiennym. Wielokrotny mistrz świata oraz Europy zarówno na długim jak i krótkim basenie. Aktualny mistrz świata na 50 i 100
+                        metrów stylem klasycznym. W latach 2014-2018 został wybrany na Najlepszego Pływaka w Europie. W roku 2015 i 2018 został ogłoszony Najlepszym Pływakiem na Świecie.
+                        Poniżej dzień z życia pływaka.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=bXVKUNUQsg0" target="_blank">Zobacz więcej</a>
+                </div>
+                <div class="tab-pane fade" id="Katinka">
+                    <h2>Katinka Hosszú</h2>
+                    <figure class="photo">
+                        <img src="Image/Hosszu.jpg" width=300 height=200 alt="Katinka Hosszú" />
+                    </figure>
+                    <p>
+                        Katinka Hosszú - węgierska pływaczka specjalizująca się w stylu zmiennym oraz grzbietowym. Trzykrotna mistrzyni olimpijska. Wielokrotna mistrzyni świata oraz Europy
+                        na długim i krótkim basenie. Mistrzyni Węgier we wszystkich konkurencjach indywidualnych na krótkim basenie. Aktualnie rekordzistka świata na 100, 200 i 400 metrów
+                        stylem zmiennym. Mówią na nią Iron Lady.<br/>
+                        Poniżej przedstawiam filmik, na którym Żelazna Dama ustanawia nowy rekord świata na 100 metrów stylem grzbietowym (Doha 2014).
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=A7rqdQBTV8E" target="_blank">Zobacz więcej</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-sm-2 mt-4 ">
+        <p><a href="#top">Początek strony</a></p>
+        <a href="index.html" >Strona główna</a>
+    </div>
+</div>
+
+
+<footer id="stopka">
+    <p>Autor &copy; by AK </p>
+</footer>
+</body>
+</html>
